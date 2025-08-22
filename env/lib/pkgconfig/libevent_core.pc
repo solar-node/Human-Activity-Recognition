@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env
+exec_prefix=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env
+libdir=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/lib
+includedir=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/include
+
+Name: libevent_core
+Description: libevent_core
+Version: 2.1.12
+Requires:
+Conflicts:
+Libs: -L${libdir} -levent_core
+Libs.private: 
+Cflags: -I${includedir}
+

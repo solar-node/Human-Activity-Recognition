@@ -1,0 +1,12 @@
+prefix=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env
+exec_prefix=${prefix}
+libdir=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/lib
+includedir=/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/include
+
+Name: absl_utility
+Description: Abseil utility library
+URL: https://abseil.io/
+Version: 20250127
+Requires: absl_base_internal = 20250127, absl_config = 20250127, absl_type_traits = 20250127
+Libs: -L${libdir}  
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -DNOMINMAX
