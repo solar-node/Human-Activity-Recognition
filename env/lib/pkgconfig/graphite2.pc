@@ -1,7 +1,0 @@
-
-Name: Graphite2
-Description: Font rendering engine for Complex Scripts
-Version: 3.0.1
-Libs: -L/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/lib -lgraphite2
-Cflags: -I/Users/adityasingh/Desktop/ml_project/human-activity-recognition/env/include
-
