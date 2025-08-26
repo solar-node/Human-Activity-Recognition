@@ -2,10 +2,10 @@ import joblib
 import pandas as pd
 import random
 # Load the saved model
-model = joblib.load("HAR-model.pkl")
-scaler = joblib.load("scaler.pkl")
-pca = joblib.load("pca.pkl")
-label_encoder = joblib.load("label_encoder.pkl")
+model = joblib.load("har-api/HAR-model.pkl")
+scaler = joblib.load("har-api/scaler.pkl")
+pca = joblib.load("har-api/pca.pkl")
+label_encoder = joblib.load("har-api/label_encoder.pkl")
 
 
 # We only need the features so we'll drop 'Activity and 'subject'
@@ -41,5 +41,5 @@ prediction_encoded = model.predict(sample_data_pca)
 prediction = label_encoder.inverse_transform(prediction_encoded)
 
 # Display the result
-print(f"Prediction for row: {random_index} -> The activity is {prediction[0]}")
+print(f"\nPrediction for row: {random_index} -> The activity is {prediction[0]}\n")
 
