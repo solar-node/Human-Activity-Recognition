@@ -53,3 +53,4 @@ def predict_activity(data: Features):
 def read_root():
     return {"message" : "Welcome to Human Activity Recognition API..." }
 
+# To run the server -> uvicorn main:app --reload
