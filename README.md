@@ -1,6 +1,6 @@
 # Human Activity Recognition Using Smartphones
 
-This project demonstrates a complete machine learning workflow to classify human activities (like Walking, Sitting, Standing) based on smartphone sensor data. The final model, a highly-tuned XGBoost Classifier, achieves **94% accuracy** in predicting the user's activity.
+This project demonstrates a complete machine learning workflow to classify human activities (like Walking, Sitting, Standing) based on smartphone sensor data. The final model, a highly-tuned XGBoost Classifier, achieves **94.16% accuracy** in predicting the user's activity.
 
 This repository contains the full analysis in a Jupyter Notebook and a simple Python script to run a live prediction.
 
@@ -67,13 +67,31 @@ Prediction for row: 1234 -> The activity is WALKING
 ## 📂 Project Structure
 
 ```
-├── Data/
-│   ├── test.csv         # Test dataset
-│   └── train.csv        # Training dataset
-├── human-activity-recognition.ipynb  # Main Jupyter Notebook with all analysis
-├── predictActivity.py      # Script to run a sample prediction
-├── requirements.txt        # Project dependencies
-└── README.md               # This file
+Human-Activity-Recognition/
+│
+├── Data/                   # Contains the training and test datasets.
+│   ├── test.csv
+│   └── train.csv
+│
+├── Models/                 # Stores the saved .pkl model files.
+│   ├── HAR-model.pkl
+│   ├── label_encoder.pkl
+│   ├── pca.pkl
+│   └── scaler.pkl
+│
+├── Plots/                  # Contains all generated charts and plots.
+│   ├── Banner.png
+│   ├── Confusion_Matrix_... (multiple files)
+│   ├── Feature_Importance_plot.png
+│   └── TSNE_visualization_of_all_features.png
+│
+├── .gitignore              # Tells Git which files to ignore.
+│
+├── human-activity-recognition.ipynb # Main notebook for analysis and modeling.
+│
+├── PredictActivity.py      # Script to run a sample prediction.
+│
+└── README.md               # Project documentation and user guide.
 ```
 
 -----
