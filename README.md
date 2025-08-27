@@ -1,7 +1,5 @@
 # Human Activity Recognition Using Smartphones
 
-![TSNE-Visualization]('Plots/TSNE_visualization_of_all_features.png')
-
 This project demonstrates a complete machine learning workflow to classify human activities (like Walking, Sitting, Standing) based on smartphone sensor data. The final model, a highly-tuned XGBoost Classifier, achieves **94% accuracy** in predicting the user's activity.
 
 This repository contains the full analysis in a Jupyter Notebook and a simple Python script to run a live prediction.
