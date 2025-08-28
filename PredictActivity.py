@@ -6,10 +6,10 @@ import os
 # Define file paths relative to the script's location
 DATA_PATH = "Data/test.csv"
 # Note: Ensure these model files are in the same root directory as this script
-MODEL_PATH = "human_activity_model.pkl" 
-SCALER_PATH = "scaler.pkl"
-PCA_PATH = "pca.pkl"
-ENCODER_PATH = "label_encoder.pkl"
+MODEL_PATH = "Models/HAR-model.pkl" 
+SCALER_PATH = "Models/scaler.pkl"
+PCA_PATH = "Models/pca.pkl"
+ENCODER_PATH = "Models/label_encoder.pkl"
 
 def load_components(model_path, scaler_path, pca_path, encoder_path):
     """Loads all the necessary model components from disk."""
